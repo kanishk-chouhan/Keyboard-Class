@@ -51,6 +51,8 @@ double getDouble(String message);
 // Reading a boolean
 boolean getBoolean();
 boolean getBoolean(String message);
+```
+
 Each method includes an optional prompt message to guide the user in entering the correct input.
 
 Installation
