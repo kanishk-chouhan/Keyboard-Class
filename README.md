@@ -1,47 +1,70 @@
-Keyboard Class Utility
-The Keyboard class is an enhanced input utility in Java that simplifies console input handling and resolves common issues with Java's Scanner class. Unlike Scanner, the Keyboard class effectively clears newline and carriage return characters from the input buffer, making it ideal for applications that require clean, sequential input.
+# Keyboard Class Utility
+## _A Refined Version of Java’s Scanner Class for Clean Input Handling_
 
-Project Structure
-src/: Contains the source code within the package com.thinking.machines.util.
-classes/: Stores compiled .class files in a structured package format.
-dist/: Contains the distributable JAR file Keyboard.jar.
-testcases/: Includes test files to validate the functionality of the Keyboard class.
-Features
-Reliable Buffer Management: Resolves the issue of lingering \n and \r characters after inputs.
-Comprehensive Data Type Support: Reads various data types, including String, int, double, boolean, and more.
-Custom Prompt Messages: Methods support optional prompt messages to enhance the user experience.
-Getting Started
-Prerequisites
-Java Development Kit (JDK) 8 or higher.
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/kanishk-chouhan/Keyboard-Class)
+
+The **Keyboard Class** is a simple and efficient input utility for Java, designed to fix common issues found in the `Scanner` class. Specifically, it handles the `\n` and `\r` characters that linger in the input buffer after reading `String` inputs. The class provides methods to read various data types from the console, including `String`, `int`, `char`, `boolean`, and more.
+
+- Written in **Java**
+- Enhances user input handling with cleaner buffer management
+- Supports multiple data types: `String`, `char`, `int`, `boolean`, and more
+
+## Features
+
+- Resolves issues with lingering newline and carriage return characters.
+- Provides methods for reading `String`, `char`, `int`, `long`, `double`, `float`, `boolean`, and other primitive types.
+- Supports optional custom prompt messages for user-friendly inputs.
+
+## Tech
+
+The **Keyboard** class is built purely in Java and offers a clean API for seamless data input handling.
+
+- **Java 8+** compatible
+- Provides methods for all common data types
+- Handles errors gracefully by returning default values for invalid inputs
+
+## Supported Data Types
+
+The **Keyboard** class includes the following methods for reading various data types:
+
+```java
+// Reading a String input
+String getString();
+String getString(String message);
+
+// Reading a single character
+char getCharacter();
+char getCharacter(String message);
+
+// Reading an integer
+int getInt();
+int getInt(String message);
+
+// Reading a long
+long getLong();
+long getLong(String message);
+
+// Reading a double
+double getDouble();
+double getDouble(String message);
+
+// Reading a boolean
+boolean getBoolean();
+boolean getBoolean(String message);
+Each method includes an optional prompt message to guide the user in entering the correct input.
+
 Installation
-Clone the repository:
+To use the Keyboard class in your Java project, clone the repository and add the source files to your project.
+
 sh
 Copy code
 git clone https://github.com/kanishk-chouhan/Keyboard-Class.git
-Compile the source files and package the JAR file following the steps below.
-Compilation and Execution
-Compile the Source Files
+Include the Keyboard.java file in your project, or use the provided JAR file by adding it to your build path.
 
-sh
-Copy code
-javac -d classes src/com/thinking/machines/util/Keyboard.java
-Create the JAR File
-
-sh
-Copy code
-jar -cvf dist/Keyboard.jar -C classes com/thinking/machines/util/Keyboard.class
-Compile and Run Test Cases
-
-Compile the test case files:
-sh
-Copy code
-javac -cp classes:dist/Keyboard.jar -d testcases testcases/TestKeyboard.java
-Run the tests:
-sh
-Copy code
-java -cp classes:dist/Keyboard.jar:testcases TestKeyboard
-Usage Example
-To use the Keyboard class in your code, import it and call its methods to read inputs of various data types. Here’s a basic example:
+Usage
+Import the Keyboard class.
+Call the appropriate method for the data type you need, with an optional message.
+Example:
 
 java
 Copy code
@@ -50,16 +73,51 @@ import com.thinking.machines.util.Keyboard;
 public class Main {
     public static void main(String[] args) {
         Keyboard keyboard = new Keyboard();
-        
-        // Reading user inputs
+
+        // Prompting the user for input
         String name = keyboard.getString("Enter your name: ");
         int age = keyboard.getInt("Enter your age: ");
-        
-        System.out.println("Hello, " + name + "! You are " + age + " years old.");
+        boolean isStudent = keyboard.getBoolean("Are you a student? (true/false): ");
+
+        // Displaying the input
+        System.out.println("Hello, " + name + "!");
+        System.out.println("You are " + age + " years old.");
+        System.out.println("Student Status: " + isStudent);
     }
 }
-Method Overview
-getString() / getString(String message): Reads a line of text with an optional prompt.
-getCharacter() / getCharacter(String message): Reads a single character with an optional prompt.
-getInt() / getInt(String message): Reads an integer with an optional prompt.
-Additional Methods: Similar methods exist for other data types such as long, short, byte, double, float, and boolean.
+Compilation and Execution
+To compile and run your program with the Keyboard class:
+
+Compile the source code:
+
+sh
+Copy code
+javac -d classes src/com/thinking/machines/util/Keyboard.java
+Package the class into a JAR file:
+
+sh
+Copy code
+jar -cvf dist/Keyboard.jar -C classes com/thinking/machines/util/Keyboard.class
+Compile your program using the JAR file:
+
+sh
+Copy code
+javac -cp dist/Keyboard.jar:classes YourProgram.java
+Run your program:
+
+sh
+Copy code
+java -cp dist/Keyboard.jar:classes YourProgram
+License
+Distributed under the MIT License. See the LICENSE file for more information.
+
+Development
+Want to contribute? Feel free to fork the repository and submit a pull request with your improvements. All contributions are welcome!
+
+Contact
+Gmail: kanishk.chouhan01@gmail.com
+LinkedIn: Kanishk Chouhan
+vbnet
+Copy code
+
+You can copy and paste this into a `README.md` file in your project. Let me know if you ne
