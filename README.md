@@ -55,21 +55,24 @@ boolean getBoolean(String message);
 
 Each method includes an optional prompt message to guide the user in entering the correct input.
 
-Installation
-To use the Keyboard class in your Java project, clone the repository and add the source files to your project.
+## Installation
 
-sh
-Copy code
+To use the **Keyboard** class in your Java project, clone the repository and add the source files to your project.
+
+```sh
 git clone https://github.com/kanishk-chouhan/Keyboard-Class.git
-Include the Keyboard.java file in your project, or use the provided JAR file by adding it to your build path.
+```
 
-Usage
-Import the Keyboard class.
-Call the appropriate method for the data type you need, with an optional message.
+Include the **Keyboard.java** file in your project, or use the provided JAR file by adding it to your build path.
+
+## Usage
+
+1. **Import the Keyboard class.**
+2. Call the appropriate method for the data type you need, with an optional message.
+
 Example:
 
-java
-Copy code
+```java
 import com.thinking.machines.util.Keyboard;
 
 public class Main {
@@ -87,39 +90,40 @@ public class Main {
         System.out.println("Student Status: " + isStudent);
     }
 }
-Compilation and Execution
-To compile and run your program with the Keyboard class:
+```
 
-Compile the source code:
+## Compilation and Execution
 
-sh
-Copy code
-javac -d classes src/com/thinking/machines/util/Keyboard.java
-Package the class into a JAR file:
+To compile and run your program with the **Keyboard** class:
 
-sh
-Copy code
-jar -cvf dist/Keyboard.jar -C classes com/thinking/machines/util/Keyboard.class
-Compile your program using the JAR file:
+1. **Compile the source code**:
+   ```sh
+   javac -d classes src/com/thinking/machines/util/Keyboard.java
+   ```
 
-sh
-Copy code
-javac -cp dist/Keyboard.jar:classes YourProgram.java
-Run your program:
+2. **Package the class into a JAR file**:
+   ```sh
+   jar -cvf dist/Keyboard.jar -C classes com/thinking/machines/util/Keyboard.class
+   ```
 
-sh
-Copy code
-java -cp dist/Keyboard.jar:classes YourProgram
-License
-Distributed under the MIT License. See the LICENSE file for more information.
+3. **Compile your program using the JAR file**:
+   ```sh
+   javac -cp dist/Keyboard.jar:classes YourProgram.java
+   ```
 
-Development
+4. **Run your program**:
+   ```sh
+   java -cp dist/Keyboard.jar:classes YourProgram
+   ```
+
+## License
+
+Distributed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Development
+
 Want to contribute? Feel free to fork the repository and submit a pull request with your improvements. All contributions are welcome!
 
-Contact
-Gmail: kanishk.chouhan01@gmail.com
-LinkedIn: Kanishk Chouhan
-vbnet
-Copy code
-
-You can copy and paste this into a `README.md` file in your project. Let me know if you ne
+# Contact
+##### Gmail: kanishk.chouhan01@gmail.com  
+##### LinkedIn: [Kanishk Chouhan](https://www.linkedin.com/in/kanishk-chouhan/)
