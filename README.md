@@ -1,8 +1,6 @@
 # Keyboard Class Utility
 ## _A Refined Version of Java’s Scanner Class for Clean Input Handling_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/kanishk-chouhan/Keyboard-Class)
-
 The **Keyboard Class** is a simple and efficient input utility for Java, designed to fix common issues found in the `Scanner` class. Specifically, it handles the `\n` and `\r` characters that linger in the input buffer after reading `String` inputs. The class provides methods to read various data types from the console, including `String`, `int`, `char`, `boolean`, and more.
 
 - Written in **Java**
@@ -12,7 +10,7 @@ The **Keyboard Class** is a simple and efficient input utility for Java, designe
 ## Features
 
 - Resolves issues with lingering newline and carriage return characters.
-- Provides methods for reading `String`, `char`, `int`, `long`, `double`, `float`, `boolean`, and other primitive types.
+- Provides methods for reading `String`, `char`, `int`, `long`, `double`, `float`, `boolean`, and `short`.
 - Supports optional custom prompt messages for user-friendly inputs.
 
 ## Tech
@@ -116,14 +114,6 @@ To compile and run your program with the **Keyboard** class:
    java -cp dist/Keyboard.jar:classes YourProgram
    ```
 
-## License
-
-Distributed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Development
-
-Want to contribute? Feel free to fork the repository and submit a pull request with your improvements. All contributions are welcome!
-
 # Contact
-##### Gmail: kanishk.chouhan01@gmail.com  
-##### LinkedIn: [Kanishk Chouhan](https://www.linkedin.com/in/kanishk-chouhan/)
+##### Gmail: itskanishk36@gmail.com  
+##### LinkedIn: https://www.linkedin.com/in/kanishk-chouhan/
